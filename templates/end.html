@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}F1 - End{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Driver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/Trophy.jpg') }}" alt="F1 trophu Photo" class="fourth-photo">
+
+    <h1 id="colorful-heading">F1  LEAGUE  2023</h1>
+    <div>
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-left-logo">
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-right-logo">
+    </div>
+  
+    <h2 class="center-text">END OF CHAMPIONSHIP</h2>
+
+    <form action="{{ url_for('home') }}" class="race_form" method="POST">
+        <button type="submit" class="submit-button">HOME</button>
+    </form>
+
+    <p class="player-info-left_one">Player: {{ player_name }}  </p>
+    <p class="player-info-left_two">Races: {{ race_counter }}</p>
+    <p class="player-info-left_three"> Points = {{ points }} </p>
+
+    <p class="ai-info-right_one">Computer</p>
+    <p class="ai-info-right_two">Difficulty: {{ difficulty_check }}</p>
+    <p class="ai-info-right_three">Points = {{ ai_points}}</p>
+
+    <p class="race-info-mid_three">Championship winner is </p>
+    <p class="race-info-mid_four">{{ champion }}</p>
+
+    <p class = "credit">This is an educational project by Robyn Doyle</p>
+
+</body>
+</html>
+{% endblock %}

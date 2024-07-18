@@ -1,0 +1,406 @@
+/* Add your CSS styles here */
+.center-text {
+    text-align: center;
+    color: white;
+}
+
+.font {
+    color: white;
+}
+
+.top-left-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30%
+}
+.top-right-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30%;
+}
+
+.main-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: absolute;
+    top: 180px;
+}
+
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text for the entire body */
+}
+
+.button-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-menu button {
+    background-color: #ff0000; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-menu button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    margin-top: 20px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+.letter {
+    transition: color 1s;
+}
+
+img {
+    display: block;
+    margin-left: 1px;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.top-left-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+}
+
+.top-right-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+}
+
+.blue-text {
+    color : blue;
+}
+
+.main-photo {
+    position: absolute;
+    
+    left: 0;
+    width: 1300px; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    width: 100%;
+    height: 100%;
+}
+.second-photo {
+    position: absolute;
+    top: 305px;
+    left: 0;
+    width: 1300px; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    width: 100%;
+    height: 80%;
+}
+
+.third-photo {
+    position: absolute;
+    top: 290px;
+    left: 0;
+    width: 1300px; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    width: 100%;
+    height: 80%;
+}
+
+.fourth-photo {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 1300px; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    width: 100%;
+    height: 80%;
+}
+
+.credit{
+    /* top: 1070px; */
+    /* bottom: 10px; */
+    color: white;
+    position: absolute;
+    top: 110%; /* Adjust vertical positioning */
+    left: 50%; /* Adjust horizontal positioning */
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust font size */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Adjust padding */
+}
+
+.credit-two{
+    /* top: 1000px; */
+    /* bottom: 10px; */
+    color: white;
+    position: absolute;
+    top: 100%; /* Adjust vertical positioning */
+    left: 50%; /* Adjust horizontal positioning */
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust font size */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; 
+}
+
+.container {
+    margin-top: 10px;
+}
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    font-size: 18px; /* Adjust font size */
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.controls button:hover {
+    background-color: #45a049; /* Hover state background color */
+}
+
+.music-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+}
+.music-icon:hover {
+    color: #45a049;
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.home-button i {
+    font-size: 24px;
+    color: #ffffff;
+}
+.home-button i:hover {
+    color: #45a049;
+}
+ /* @media (max-width: 600px) {
+            .music-icon {
+                font-size: 20px;
+                top: 10px;
+                right: 10px;
+            } */
+
+.player-info-left_one {
+    position: absolute;
+    top: 170px; /* Adjust the value to your preference */
+    left: 10px; /* Adjust the value to your preference */
+    text-align: left;
+    font-size: 24px; /* Adjust the value to your preference */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.player-info-left_two {
+    position: absolute;
+    top: 210px; /* Adjust the value to your preference */
+    left: 10px; /* Adjust the value to your preference */
+    text-align: left;
+    font-size: 24px; /* Adjust the value to your preference */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.player-info-left_three {
+    position: absolute;
+    top: 250px; /* Adjust the value to your preference */
+    left: 10px; /* Adjust the value to your preference */
+    text-align: left;
+    font-size: 24px; /* Adjust the value to your preference */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.ai-info-right_one, .ai-info-right_two, .ai-info-right_three {
+    position: absolute;
+    font-size: 24px; /* Adjust the value to your preference */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.ai-info-right_one {
+    top: 170px; /* Adjust the value to your preference */
+    right: 10px; /* Adjust the value to your preference */
+    text-align: left;
+}
+
+.ai-info-right_two {
+    top: 210px; /* Adjust the value to your preference */
+    right: 10px; /* Adjust the value to your preference */
+    text-align: left;
+}
+
+.ai-info-right_three {
+    top: 250px; /* Adjust the value to your preference */
+    right: 12px; /* Adjust the value to your preference */
+    text-align: left;
+}
+
+
+.ai-info-mid {
+    position: absolute;
+    top: 170px; /* Adjust the value to your preference */
+    left: 50%;  /* Center horizontally based on the left edge */
+    transform: translateX(-50%);  /* Adjust to center the element */
+    text-align: center;
+    font-size: 24px; /* Adjust the value to your preference */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.race-info-mid, .race-info-mid-two, .race-info-mid_three, .race-info-mid_four, .race-info-mid-five {
+    position: absolute;
+    top: 210px; /* Adjust the value to your preference */
+    right: 20%;
+    text-align: center;
+    font-size: 24px; /* Adjust the value to your preference */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.race-info-mid-two {
+    position: absolute;
+    top: 250px; /* Adjust the value to your preference */
+    right: 20%; 
+    text-align: center;
+    
+}
+
+.race-info-mid_three {
+    position: absolute;
+    top: 170px; /* Adjust the value to your preference */
+    left: 50%;  /* Center horizontally based on the left edge */
+    transform: translateX(-50%);  /* Adjust to center the element */
+    text-align: center;    
+}
+
+.race-info-mid_four {
+    position: absolute;
+    top: 210px; /* Adjust the value to your preference */
+    left: 50%;  /* Center horizontally based on the left edge */
+    transform: translateX(-50%);  /* Adjust to center the element */
+    text-align: center;    
+}
+
+    .race-info-mid-five {
+    position: absolute;
+    top: 210px; 
+    left: 20%;  
+    /* transform: translateX(-50%);   */
+    text-align: center;    
+}
+
+.race_form {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form elements vertically */
+    gap: 10px; /* Optional: Add some space between elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-button {
+    align-self: center; 
+    position: absolute;
+
+   
+    margin-top: 180px; /* Optional: Add some space above the submit button */
+    
+}
+
+.submit-button:hover {
+    background-color: #ff0000; /* Hover state background color */
+    color: white;
+}
+
+/* Ensure the form looks good on smaller screens */
+@media (max-width: 768px) {
+    .race_form {
+        flex-direction: column;
+    }
+}

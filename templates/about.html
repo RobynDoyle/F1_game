@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}F1 - About{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+    <h1 id="colorful-heading">F1  LEAGUE  2023</h1>
+    <div>
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-left-logo">
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-right-logo">
+    </div>
+ 
+
+    <!-- <img src="{{ url_for('static', filename='images/redbull.jpeg') }}" alt="F1 Cars Photo" class="second-photo"> -->
+    
+    <p class="race-info-mid-five"> This game uses race data from F1, which was stored in a pandas data frame using
+        the beautiful soup web scraping package. 
+    The data was then stored in a mySQL database, which contains over 400 rows of race data. 
+The data that matters for this game is the drivers points collected at each race. 
+A flask micro framework was coded with python that runs the logic behind the scenes. Html and CSS was used to makes the web
+pages, while Jinja and javascript are also used. The flask script queries the database live to retrieve the race points chosen
+by the player and the computer logic.</p>
+
+    <p class = "credit">This is an educational project by Robyn Doyle {{ player_name }}</p>
+
+    {% if player_name %}
+    <p class="credit-two">Welcome, {{ player_name }}!</p>
+    {% endif %}
+    
+</body>
+</html>
+{% endblock %}

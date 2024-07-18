@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}F1 - Credit{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+    <h1 id="colorful-heading">F1  LEAGUE  2023</h1>
+    <div>
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-left-logo">
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-right-logo">
+    </div>
+ 
+
+    <!-- <img src="{{ url_for('static', filename='images/redbull.jpeg') }}" alt="F1 Cars Photo" class="second-photo"> -->
+    
+    <p class="race-info-mid-five"> Robyn Doyle made this game for educational purposes. He does not own the images used in this project</p>
+
+    <p class = "credit">This is an educational project by Robyn Doyle {{ player_name }}</p>
+
+    {% if player_name %}
+    <p class="credit-two">Welcome, {{ player_name }}!</p>
+    {% endif %}
+    
+</body>
+</html>
+{% endblock %}

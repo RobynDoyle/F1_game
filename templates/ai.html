@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}F1 - Computer's Turn{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Driver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+    <h1 id="colorful-heading">F1  LEAGUE  2023</h1>
+    <div>
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-left-logo">
+        <img src="{{ url_for('static', filename='images/F1-Logo.png') }}" alt="F1 Logo" class="top-right-logo">
+    </div>
+  
+    <h2 class="center-text">AI's Choice</h2>
+    
+    <form action="{{ url_for('result') }}" class="race_form" method="POST">
+        <input type="hidden" name="player_name" value="{{ player_name }}">
+        <input type="hidden" name="difficulty_check" value="{{ difficulty_check}}">
+        <input type="hidden" name="difficulty" value="{{ difficulty }}">
+        <input type="hidden" name="points" value="{{ points }}">
+        <input type="hidden" name="ai_points" value="{{ ai_points }}">
+        <input type="hidden" name="races" value="{{ races }}">
+        <input type="hidden" name="race_counter" value="{{ race_counter }}">
+        <button type="submit" class="submit-button">NEXT</button>
+    </form>
+    
+    <img src="{{ this_race_picture }}" alt="F1 track night" class="third-photo">
+    <p class = "credit">This is an educational project by Robyn Doyle</p>
+
+    <p class="player-info-left_one">Player: {{ player_name }}  </p>
+    <p class="player-info-left_two">Races: {{ race_counter+1 }} of {{ races }}</p>
+    <p class="player-info-left_three"> Points = {{ points }} </p>
+
+    <p class="ai-info-right_one">Computer</p>
+    <p class="ai-info-right_two">Difficulty: {{ difficulty_check }}</p>
+    <p class="ai-info-right_three">Points = {{ ai_points}}</p>
+
+    <p class="ai-info-mid">{{ ai_drivers}}</p>
+
+</body>
+</html>
+{% endblock %}
